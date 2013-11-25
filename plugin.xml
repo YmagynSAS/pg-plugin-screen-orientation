@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+xmlns:android="http://schemas.android.com/apk/res/android"
+id="org.apache.cordova.screenorientation.ScreenOrientation"
+    version="0.0.1">
+	
+    <name>ScreenOrientation</name>
+	<author>Ymagyn</author>
+	<description>
+		Screen Orientation plugin
+	</description>
+	<license>MIT</license>
+	<js-module src="www/ScreenOrientation.js" name="ScreenOrientation">
+        <clobbers target="window.screenorientation" />
+    </js-module>
+	
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="ScreenOrientation" >
+				<param name="android-package" value="org.apache.cordova.screenorientation.ScreenOrientation"/>
+			</feature>
+		</config-file>
+		<source-file src="src/android/ScreenOrientation.java" target-dir="src/org/apache/cordova/screenorientation" />
+	</platform>
+</plugin>

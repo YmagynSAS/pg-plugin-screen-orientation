@@ -1,8 +1,7 @@
-package com.tsukurusha.phonegap.plugins;
+package org.apache.cordova.screenorientation;
 
-import org.apache.cordova.api.CallbackContext;
-import org.apache.cordova.api.CordovaPlugin;
-import org.apache.cordova.api.PluginResult;
+import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaPlugin;
 import org.json.JSONArray;
 import org.json.JSONException;
 
@@ -11,7 +10,6 @@ import android.content.pm.ActivityInfo;
 
 
 public class ScreenOrientation extends CordovaPlugin {
-    // Refer to http://developer.android.com/reference/android/R.attr.html#screenOrientation
 
     private static final String UNSPECIFIED = "unspecified";
     private static final String LANDSCAPE = "landscape";
