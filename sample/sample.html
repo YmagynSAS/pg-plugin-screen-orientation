@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ScreenOrientation PhoneGap Plugin Sample</title>
-        <meta charset="utf-8">
-        <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
-        <script type="text/javascript" charset="utf-8" src="pg-plugin-screen-orientation.js"></script>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
     </head>
     <body>
-        <h1>ScreenOrientation PhoneGap Plugin Sample</h1>
-
-        <!-- Please refer to http://developer.android.com/reference/android/R.attr.html#screenOrientation for detail of each orientation parameters. -->
-
-        <input type="button" onclick="navigator.screenOrientation.set('landscape');return false;" value="Landscape" />
-        <input type="button" onclick="navigator.screenOrientation.set('portrait');return false;" value="Portrait" />
-        <input type="button" onclick="navigator.screenOrientation.set('sensorLandscape');return false;" value="Sensor Landscape" />
-        <input type="button" onclick="navigator.screenOrientation.set('sensorPortrait');return false;" value="Sensor Portrait" />
-        <input type="button" onclick="navigator.screenOrientation.set('reverseLandscape');return false;" value="Reverse Landscape" />
-        <input type="button" onclick="navigator.screenOrientation.set('reversePortrait');return false;" value="Reverse Portrait" />
-        <input type="button" onclick="navigator.screenOrientation.set('fullSensor');return false;" value="Full Sensor" />
+        <div class="app">
+            <h1>PhoneGap</h1>
+            
+        <input type="button" onclick="YMAGYN.SDK.ScreenOrientation.set(YMAGYN.SDK.ScreenOrientation.LANDSCAPE);return false;" value="Landscape" />
+        <input type="button" onclick="YMAGYN.SDK.ScreenOrientation.set(YMAGYN.SDK.ScreenOrientation.PORTRAIT);return false;" value="Portrait" />
+        <input type="button" onclick="YMAGYN.SDK.ScreenOrientation.set(YMAGYN.SDK.ScreenOrientation.SENSOR_LANDSCAPE);return false;" value="Sensor Landscape" />
+        <input type="button" onclick="YMAGYN.SDK.ScreenOrientation.set(YMAGYN.SDK.ScreenOrientation.SENSOR_PORTRAIT);return false;" value="Sensor Portrait" />
+        <input type="button" onclick="YMAGYN.SDK.ScreenOrientation.set(YMAGYN.SDK.ScreenOrientation.REVERSE_LANDSCAPE);return false;" value="Reverse Landscape" />
+        <input type="button" onclick="YMAGYN.SDK.ScreenOrientation.set(YMAGYN.SDK.ScreenOrientation.REVERSE_PORTRAIT);return false;" value="Reverse Portrait" />
+        <input type="button" onclick="YMAGYN.SDK.ScreenOrientation.set(YMAGYN.SDK.ScreenOrientation.FULL_SENSOR);return false;" value="Full Sensor" />
+        </div>
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="YMAGYN.IO.Mobile.production.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
     </body>
 </html>
